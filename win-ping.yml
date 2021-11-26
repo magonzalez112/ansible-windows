@@ -2,3 +2,9 @@
   tasks:
     - name: Ensure connectivity
       win_ping:
+      
+    - name: Check execution user
+      win_command: whoami
+      
+    - name: Get services running
+      win_shel: Get-Service | Where-Object {$_.Status -eq 'Running'}
