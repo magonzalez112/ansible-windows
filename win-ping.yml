@@ -7,4 +7,4 @@
       win_command: whoami
       
     - name: Get services running
-      win_shel: Get-Service | Where-Object {$_.Status -eq 'Running'}
+      win_shell: Get-Service | Where-Object {$_.Status -eq 'Running'}
