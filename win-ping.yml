@@ -1,4 +1,4 @@
-- hosts: windows
+- hosts: all
   tasks:
     - name: Ensure connectivity
       win_ping:
